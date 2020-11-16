@@ -243,7 +243,10 @@
 <div class="formsvaz wow bounceInDown"><form name="myform" method="post">
   <div class="pole">
   <p class="atribut">Email<input type="email" name="email" class="user" required></p>
-  <p class="atribut">Номер телефона<input type="tel" name="phone" class="user" id="tel"></p>
+      <p class="atribut">Номер телефона
+    <br><div class="telephone" class="telephone">Формат: 099-999-99-99</div>
+    <input type="tel" name="phone" class="user" id="tel"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"  required></p>
     <p class="atribut">Сообщение
     <textarea class="user"  maxlength="100" required></textarea></p>
 </div>
